@@ -1,6 +1,10 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,9 +32,10 @@ class LoginScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Image.asset("assets/images/dolittle-text.png"),
-                  const Text(
+                  Text(
                     "Buy and Watch Your Favorite Movie with Us",
-                    style: TextStyle(color: Colors.white, fontSize: 17),
+                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.background),
                   ),
                   const SizedBox(
                     height: 25,
@@ -43,23 +48,19 @@ class LoginScreen extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      backgroundColor: Colors.red,
+                      backgroundColor: Color(0xFFE82351),
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       minimumSize: const Size(double.infinity, 50),
                     ),
-                    child: const Text(
+                    child: Text(
                       "LOGIN",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.background),
                     ),
                   ),
                   // Tombol SIGN IN
                   TextButton(
-                    onPressed: () {
-                      // Tambahkan logika ketika tombol SIGN IN ditekan
-                    },
+                    onPressed: () {},
                     style: TextButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -67,12 +68,10 @@ class LoginScreen extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       minimumSize: const Size(double.infinity, 50),
                     ),
-                    child: const Text(
+                    child: Text(
                       "DONT HAVE ACCOUNT? SIGN IN",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                      ),
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                          color: Theme.of(context).colorScheme.background),
                     ),
                   ),
                 ],
