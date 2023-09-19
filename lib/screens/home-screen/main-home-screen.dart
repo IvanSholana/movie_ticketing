@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticketing/screens/home-screen/widget/carousel.dart';
+import 'package:movie_ticketing/screens/home-screen/widget/genre.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -20,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0XFF1e2834),
+      backgroundColor: const Color(0XFF1e2834),
       appBar: AppBar(
         toolbarHeight: 60,
         title: Container(
@@ -54,29 +55,29 @@ class _HomeScreenState extends State<HomeScreen> {
                   });
                 },
                 underline: Container(), // Menghilangkan underline
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_drop_down,
                   color: Colors.white,
                 ),
                 iconSize: 30, // Atur ukuran ikon dropdown sesuai kebutuhan
-                dropdownColor: Color(0XFF1e2834),
+                dropdownColor: const Color(0XFF1e2834),
               ),
             ],
           ),
         ),
-        backgroundColor: Color(0XFF1e2834),
+        backgroundColor: const Color(0XFF1e2834),
         actions: [
           Row(
             children: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.search),
+                icon: const Icon(Icons.search),
                 color: Colors.white,
                 iconSize: 25,
               ),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.notifications),
+                icon: const Icon(Icons.notifications),
                 color: Colors.white,
                 iconSize: 25,
               ),
@@ -87,9 +88,11 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Column(children: [
         Container(
             height: 200,
-            margin: EdgeInsets.only(left: 5),
+            margin: const EdgeInsets.only(left: 5),
             width: double.infinity,
             child: Carousel()),
+        SizedBox(height: 20),
+        GenreSection()
       ]),
     );
   }
