@@ -12,7 +12,7 @@ class _GenreSectionState extends State<GenreSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 20),
+      margin: EdgeInsets.symmetric(horizontal: 5),
       width: double.infinity,
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Padding(
@@ -22,7 +22,7 @@ class _GenreSectionState extends State<GenreSection> {
             style: Theme.of(context)
                 .textTheme
                 .titleLarge!
-                .copyWith(color: Theme.of(context).colorScheme.secondary),
+                .copyWith(color: Colors.white),
           ),
         ),
         SingleChildScrollView(
@@ -39,8 +39,8 @@ class _GenreSectionState extends State<GenreSection> {
                                         .colorScheme
                                         .secondary)),
                             color: Colors.transparent,
-                            margin: EdgeInsets.symmetric(
-                                horizontal: 10, vertical: 15),
+                            margin:
+                                EdgeInsets.only(left: 10, right: 10, top: 15),
                             child: Padding(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),

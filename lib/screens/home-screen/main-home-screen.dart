@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticketing/screens/home-screen/widget/carousel.dart';
 import 'package:movie_ticketing/screens/home-screen/widget/genre.dart';
+import 'package:movie_ticketing/screens/home-screen/widget/new-release.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -91,9 +92,30 @@ class _HomeScreenState extends State<HomeScreen> {
             margin: const EdgeInsets.only(left: 5),
             width: double.infinity,
             child: Carousel()),
-        SizedBox(height: 20),
-        GenreSection()
+        const SizedBox(height: 20),
+        const GenreSection(),
+        const SizedBox(height: 20),
+        Container(height: 300, child: const NewRelease())
       ]),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+        onTap: (index) {
+          setState(() {});
+        },
+      ),
     );
   }
 }
