@@ -27,14 +27,14 @@ List<Film> films = [
   // Film Star Wars
   Film(
     title: "Star Wars: The Rise of Skywalker",
-    genre: ["Action", "Adventure", "Fantasy"],
+    genre: ["Action", "Adventure", "Fantasy", "History", "Sci-Fi"],
     poster: Image.asset("assets/star_wars_rise_of_skywalker.jpg"),
     logo: Image.asset("assets/star_wars_logo.jpg"),
     rating: 6.5,
   ),
   Film(
     title: "Star Wars: The Last Jedi",
-    genre: ["Action", "Adventure", "Fantasy"],
+    genre: ["Action", "Adventure", "Fantasy", "History", "Sci-Fi"],
     poster: Image.asset("assets/star_wars_last_jedi.jpg"),
     logo: Image.asset("assets/star_wars_logo.jpg"),
     rating: 7.0,
@@ -42,21 +42,21 @@ List<Film> films = [
   // Anime
   Film(
     title: "Your Name",
-    genre: ["Animation", "Drama", "Fantasy"],
+    genre: ["Animation", "Drama", "Fantasy", "Romance"],
     poster: Image.asset("assets/your_name.jpg"),
     logo: Image.asset("assets/anime_logo.jpg"),
     rating: 8.9,
   ),
   Film(
     title: "Demon Slayer: Mugen Train",
-    genre: ["Animation", "Action", "Adventure"],
+    genre: ["Animation", "Action", "Adventure", "Horor"],
     poster: Image.asset("assets/demon_slayer.jpg"),
     logo: Image.asset("assets/anime_logo.jpg"),
     rating: 8.3,
   ),
   Film(
     title: "One Piece: Stampede",
-    genre: ["Animation", "Action", "Adventure"],
+    genre: ["Animation", "Action", "Adventure", "Comedy"],
     poster: Image.asset("assets/one_piece_stampede.jpg"),
     logo: Image.asset("assets/anime_logo.jpg"),
     rating: 7.7,
