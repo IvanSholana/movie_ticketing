@@ -95,7 +95,11 @@ class _HomeScreenState extends State<HomeScreen> {
         const SizedBox(height: 20),
         const GenreSection(),
         const SizedBox(height: 20),
-        Container(height: 300, child: const NewRelease())
+        // ignore: sized_box_for_whitespace
+        Container(
+          height: 300,
+          child: const NewRelease(),
+        )
       ]),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
