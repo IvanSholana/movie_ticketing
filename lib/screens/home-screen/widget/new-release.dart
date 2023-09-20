@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticketing/data/genre.dart';
 import 'package:movie_ticketing/screens/home-screen/widget/new-release-content.dart';
+import 'package:movie_ticketing/data/film-list.dart';
 
 class NewRelease extends StatelessWidget {
   const NewRelease({super.key});
@@ -24,7 +25,11 @@ class NewRelease extends StatelessWidget {
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: genre.map((e) => NewReleaseContent()).toList(),
+              children: films
+                  .map((e) => NewReleaseContent(
+                        film: e,
+                      ))
+                  .toList(),
             ),
           )
         ]),

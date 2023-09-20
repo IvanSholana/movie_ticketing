@@ -11,7 +11,7 @@ class CarouselContent extends StatelessWidget {
       fit: StackFit.expand,
       children: [
         Positioned.fill(
-          child: film.poster,
+          child: film.heading,
         ),
         Container(
           padding: const EdgeInsets.only(bottom: 10),

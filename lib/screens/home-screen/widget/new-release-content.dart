@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:movie_ticketing/models/film-model.dart';
 
 class NewReleaseContent extends StatefulWidget {
+  NewReleaseContent({super.key, required this.film});
+  Film film;
   @override
   State<NewReleaseContent> createState() => _NewReleaseContentState();
 }
@@ -20,10 +23,7 @@ class _NewReleaseContentState extends State<NewReleaseContent> {
         width: 200,
         child: Stack(children: [
           Positioned.fill(
-            child: Image.asset(
-              "assets/images/dolittle.jpg",
-              fit: BoxFit.cover,
-            ),
+            child: widget.film.poster,
           )
         ]),
       ),

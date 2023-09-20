@@ -6,85 +6,136 @@ List<Film> films = [
   Film(
     title: "Avengers: Endgame",
     genre: ["Action", "Adventure", "Sci-Fi"],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/endgame.jpg",
       fit: BoxFit.cover,
     ),
     logo: Image.asset(
       "assets/images/end-game.png",
+      width: 200,
     ),
+    poster: Image.asset("assets/images/poster/endgame.jpg", fit: BoxFit.cover),
     rating: 8.4,
   ),
   Film(
+    poster: Image.asset(
+      "assets/images/poster/blackpanther.jpg",
+      fit: BoxFit.cover,
+    ),
     title: "Black Panther",
     genre: ["Action", "Adventure", "Sci-Fi"],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/blackpanther.jpg",
       fit: BoxFit.cover,
     ),
-    logo: Image.asset("assets/images/black-panther.png"),
+    logo: Image.asset(
+      "assets/images/black-panther.png",
+      width: 200,
+    ),
     rating: 7.3,
   ),
   Film(
+    poster: Image.asset(
+      "assets/images/poster/spiderman.jpg",
+      fit: BoxFit.cover,
+    ),
     title: "Spider-Man: Into the Spider-Verse",
     genre: ["Animation", "Action", "Adventure"],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/spiderman.jpg",
       fit: BoxFit.cover,
     ),
-    logo: Image.asset("assets/images/spiderman.png"),
+    logo: Image.asset(
+      "assets/images/spiderman.png",
+      width: 200,
+    ),
     rating: 8.4,
   ),
   // Film Star Wars
   Film(
+    poster: Image.asset(
+      "assets/images/poster/The Rise of Skywalker.jpeg",
+      fit: BoxFit.cover,
+    ),
     title: "Star Wars: The Rise of Skywalker",
     genre: ["Action", "Adventure", "Fantasy", "History", "Sci-Fi"],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/The Rise of Skywalker.jpeg",
       fit: BoxFit.cover,
     ),
-    logo: Image.asset("assets/images/rise-of-skywalker.png"),
+    logo: Image.asset(
+      "assets/images/rise-of-skywalker.png",
+      width: 200,
+    ),
     rating: 6.5,
   ),
   Film(
+    poster: Image.asset(
+      "assets/images/poster/last-jedi.jpg",
+      fit: BoxFit.cover,
+    ),
     title: "Star Wars: The Last Jedi",
     genre: ["Action", "Adventure", "Fantasy", "History", "Sci-Fi  "],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/last-jedi.jpg",
       fit: BoxFit.cover,
     ),
-    logo: Image.asset("assets/images/last-jedi.png"),
+    logo: Image.asset(
+      "assets/images/last-jedi.png",
+      width: 200,
+    ),
     rating: 7.0,
   ),
   // Anime
   Film(
+    poster: Image.asset(
+      "assets/images/poster/yourname.jpg",
+      fit: BoxFit.cover,
+    ),
     title: "Your Name",
     genre: ["Animation", "Drama", "Fantasy", "Romance"],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/yourname.jpg",
       fit: BoxFit.cover,
     ),
-    logo: Image.asset("assets/images/yourname.png"),
+    logo: Image.asset(
+      "assets/images/yourname.png",
+      width: 200,
+    ),
     rating: 8.9,
   ),
   Film(
+    poster: Image.asset(
+      "assets/images/poster/demonslayer.jpg",
+      fit: BoxFit.cover,
+    ),
     title: "Demon Slayer: Mugen Train",
     genre: ["Animation", "Action", "Adventure", "Horor"],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/demonslayer.jpg",
       fit: BoxFit.cover,
     ),
-    logo: Image.asset("assets/images/demonslayer.png"),
+    logo: Image.asset(
+      "assets/images/demonslayer.png",
+      width: 100,
+    ),
     rating: 8.3,
   ),
   Film(
+    poster: Image.asset(
+      "assets/images/poster/onepiece.jpg",
+      fit: BoxFit.cover,
+    ),
     title: "One Piece: Stampede",
     genre: ["Animation", "Action", "Adventure", "Comedy"],
-    poster: Image.asset(
+    heading: Image.asset(
       "assets/images/onepiece.jpg",
       fit: BoxFit.cover,
     ),
-    logo: Image.asset("assets/images/onepiece.png"),
+    logo: Image.asset(
+      "assets/images/onepiece.png",
+      width: 200,
+    ),
     rating: 7.7,
   ),
 ];
