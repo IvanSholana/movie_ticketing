@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:movie_ticketing/models/film-model.dart';
 
 class CarouselContent extends StatelessWidget {
-  const CarouselContent({super.key});
+  const CarouselContent({super.key, required this.film});
+  final Film film;
 
   @override
   Widget build(BuildContext context) {
@@ -9,10 +11,7 @@ class CarouselContent extends StatelessWidget {
       fit: StackFit.expand,
       children: [
         Positioned.fill(
-          child: Image.asset(
-            "assets/images/dolittle.jpg",
-            fit: BoxFit.cover,
-          ),
+          child: film.poster,
         ),
         Container(
           padding: const EdgeInsets.only(bottom: 10),
@@ -22,9 +21,7 @@ class CarouselContent extends StatelessWidget {
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter)),
           alignment: Alignment.bottomCenter,
-          child: Image.asset(
-            "assets/images/dolittle-text-mini.png",
-          ),
+          child: film.logo,
         ),
       ],
     );

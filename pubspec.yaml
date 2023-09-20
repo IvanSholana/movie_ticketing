@@ -62,6 +62,24 @@ flutter:
     - assets/images/dolittle.jpg
     - assets/images/dolittle-text.png
     - assets/images/dolittle-text-mini.png
+    - assets/images/blackpanther.jpg
+    - assets/images/black-panther.png
+    - assets/images/blackwidow-text.png
+    - assets/images/blackwidow.jpg
+    - assets/images/demonslayer.jpg
+    - assets/images/demonslayer.png
+    - assets/images/endgame.jpg
+    - assets/images/end-game.png
+    - assets/images/last-jedi.jpg
+    - assets/images/last-jedi.png
+    - assets/images/onepiece.jpg
+    - assets/images/onepiece.png
+    - assets/images/rise-of-skywalker.png
+    - assets/images/The Rise of Skywalker.jpeg
+    - assets/images/spiderman.jpg
+    - assets/images/spiderman.png
+    - assets/images/yourname.jpg
+    - assets/images/yourname.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -9,7 +9,7 @@ void main() {
       theme: ThemeData.dark().copyWith(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Color(0XFF1e2834),
+          seedColor: const Color(0XFF1e2834),
         ),
         textTheme: GoogleFonts.montserratTextTheme(),
       ),
