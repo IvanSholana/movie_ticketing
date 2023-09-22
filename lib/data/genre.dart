@@ -11,3 +11,5 @@ List<String> genre = [
   "Animation",
   "History",
 ];
+
+List<String> selectedGenre = [];
