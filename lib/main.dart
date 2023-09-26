@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_ticketing/screens/login/main-logis-screen.dart';
 import 'package:movie_ticketing/screens/home-screen/main-home-screen.dart';
+import 'package:movie_ticketing/screens/search/main-search.dart';
 
 void main() {
   runApp(
@@ -21,6 +22,6 @@ void main() {
 class StartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return HomeScreen();
+    return MainSearchScreen();
   }
 }

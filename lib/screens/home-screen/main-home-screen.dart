@@ -24,19 +24,19 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: const Color(0XFF1e2834),
       appBar: AppBar(
-        toolbarHeight: 60,
-        title: Container(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Location",
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyMedium!
-                    .copyWith(color: Colors.white),
-              ),
-              DropdownButton<String>(
+        toolbarHeight: 80,
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Location",
+              style: Theme.of(context)
+                  .textTheme
+                  .bodyMedium!
+                  .copyWith(color: Colors.white),
+            ),
+            Container(
+              child: DropdownButton<String>(
                 value: selectedLocation,
                 items: locations.map((e) {
                   return DropdownMenuItem(
@@ -63,8 +63,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 iconSize: 30, // Atur ukuran ikon dropdown sesuai kebutuhan
                 dropdownColor: const Color(0XFF1e2834),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
         backgroundColor: const Color(0XFF1e2834),
         actions: [
@@ -88,10 +88,11 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(children: [
         Container(
-            height: 200,
-            margin: const EdgeInsets.only(left: 5),
-            width: double.infinity,
-            child: Carousel()),
+          height: 200,
+          margin: const EdgeInsets.only(left: 5),
+          width: double.infinity,
+          child: const Carousel(),
+        ),
         const SizedBox(height: 20),
         const GenreSection(),
         const SizedBox(height: 20),

@@ -12,7 +12,7 @@ class _GenreSectionState extends State<GenreSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 5),
+      margin: const EdgeInsets.symmetric(horizontal: 5),
       width: double.infinity,
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Padding(
@@ -39,7 +39,7 @@ class _GenreSectionState extends State<GenreSection> {
                     ),
                   ),
                   color: isSelected ? Colors.red : Colors.transparent,
-                  margin: EdgeInsets.only(left: 10, right: 10, top: 15),
+                  margin: const EdgeInsets.only(left: 10, right: 10, top: 15),
                   child: InkWell(
                     onTap: () {
                       setState(() {
