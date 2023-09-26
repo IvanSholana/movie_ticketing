@@ -20,9 +20,10 @@ class Carousel extends StatelessWidget {
           height: 100,
           color: Colors.white,
           child: Center(
-              child: CarouselContent(
-            film: films[index],
-          )),
+            child: CarouselContent(
+              film: films[index],
+            ),
+          ),
         ),
       ),
       itemCount: films.length,

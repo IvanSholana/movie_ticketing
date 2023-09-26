@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_ticketing/screens/search/widget/search-list.dart';
-import 'package:movie_ticketing/screens/';
+import 'package:movie_ticketing/screens/search/widget/movie-suggestion.dart';
 
 class MainSearchScreen extends StatefulWidget {
   const MainSearchScreen({super.key});
@@ -46,7 +46,9 @@ class _MainSearchScreenState extends State<MainSearchScreen> {
           ),
         ),
       ),
-      body: SearchList(),
+      body: Column(
+        children: [SearchList(), MovieSugesstion()],
+      ),
     );
   }
 }
